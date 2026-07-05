@@ -1,0 +1,397 @@
+/* ===== 基本設定 ===== */
+:root {
+  --color-primary: #1b5e6b;
+  --color-primary-dark: #103d47;
+  --color-accent: #e8935a;
+  --color-bg: #f7f6f2;
+  --color-card: #ffffff;
+  --color-text: #2b2b2b;
+  --color-text-light: #6b6b6b;
+  --color-border: #e2e0da;
+  --radius: 10px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --max-width: 1080px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "Yu Gothic", "Segoe UI", Roboto, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ===== ヘッダー ===== */
+.site-header {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #fff;
+  padding: 40px 0 32px;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0 0 8px;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+.tagline {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+/* ===== ナビ ===== */
+.hotel-nav {
+  background: #fff;
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.hotel-nav__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.hotel-nav a {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--color-text);
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.hotel-nav a:hover,
+.hotel-nav a:focus {
+  background: var(--color-bg);
+}
+
+.hotel-nav__cta {
+  margin-left: auto;
+  background: var(--color-accent);
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.hotel-nav__cta:hover {
+  background: #d47f45;
+}
+
+/* ===== セクション共通 ===== */
+.section {
+  padding: 48px 0;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  border-left: 6px solid var(--color-accent);
+  padding-left: 12px;
+}
+
+.section-lead {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* ===== 比較表 ===== */
+.compare-table-wrap {
+  background: var(--color-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 8px;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+
+.compare-table thead th {
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.95rem;
+  position: sticky;
+  top: 49px;
+}
+
+.compare-table thead th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.compare-table thead th:last-child {
+  border-top-right-radius: 8px;
+}
+
+.compare-table tbody th {
+  background: #fafaf7;
+  font-weight: bold;
+  font-size: 0.9rem;
+  width: 160px;
+}
+
+.compare-table tbody tr:last-child td,
+.compare-table tbody tr:last-child th {
+  border-bottom: none;
+}
+
+.compare-table__thumb {
+  width: 100%;
+  max-width: 160px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #e9e7e1;
+}
+
+.price {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--color-accent);
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef3ec;
+  color: var(--color-primary-dark);
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.tag--yes {
+  background: #e4f4ea;
+  color: #237a4b;
+}
+
+.tag--no {
+  background: #f2f0eb;
+  color: #8a8579;
+}
+
+.official-link {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.official-link:hover,
+.official-link:focus {
+  background: var(--color-primary-dark);
+}
+
+.official-link--inline {
+  margin-left: 8px;
+}
+
+/* ===== ホテル詳細・ギャラリー ===== */
+.hotel-detail__summary {
+  color: var(--color-text-light);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  background: #e9e7e1;
+  transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== ライトボックス ===== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 100;
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox__img {
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: 6px;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* ===== フッター ===== */
+.site-footer {
+  background: var(--color-primary-dark);
+  color: #d8e2e3;
+  padding: 24px 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.site-footer__copy {
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+
+/* ===== レスポンシブ：タブレット ===== */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .compare-table thead th {
+    top: 0;
+  }
+}
+
+/* ===== レスポンシブ：スマホ（比較表をカード化） ===== */
+@media (max-width: 640px) {
+  .hotel-nav__inner {
+    justify-content: center;
+  }
+
+  .hotel-nav__cta {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .compare-table thead {
+    display: none;
+  }
+
+  .compare-table,
+  .compare-table tbody,
+  .compare-table tr,
+  .compare-table th,
+  .compare-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .compare-table tbody tr {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+
+  .compare-table tbody th {
+    background: var(--color-primary);
+    color: #fff;
+    border-bottom: none;
+  }
+
+  .compare-table td {
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    text-align: right;
+  }
+
+  .compare-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: var(--color-text-light);
+    font-size: 0.8rem;
+    text-align: left;
+    flex-shrink: 0;
+  }
+
+  .compare-table__thumb {
+    max-width: 120px;
+    margin-left: auto;
+  }
+}
