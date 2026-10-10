@@ -3,37 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>河口湖・富士急ハイランド周辺ホテル比較サイト</title>
-<meta name="description" content="富士急ハイランド周辺の3つのホテルを、料金・温泉・部屋タイプ・朝食/夕食などで徹底比較。">
+<title>富士急ハイランド旅行のしおり</title>
+<meta name="description" content="新潟発・8人で行く富士急ハイランド1泊2日旅行のしおり。スケジュール、宿泊先、チケット、持ち物のお知らせ。">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container">
-    <h1>ホテル比較サイト</h1>
-    <p class="tagline">富士急ハイランド周辺の3つのホテルを比較</p>
+    <h1>富士急ハイランド旅行のしおり</h1>
+    <p class="tagline">11/8（日）〜11/9（月） ｜ 新潟発・8人で行く1泊2日</p>
   </div>
 </header>
 
 <nav class="hotel-nav">
   <div class="container hotel-nav__inner">
-    <a href="#hotel-a">ブリーズベイレイクリゾート河口湖</a>
-    <a href="#hotel-b">富士山ステーションホテル</a>
-    <a href="#hotel-c">ホテルマイステイズ富士山 展望温泉</a>
-    <a href="#travel-plan">旅行計画</a>
-    <a href="#compare" class="hotel-nav__cta">比較表を見る</a>
+    <a href="#hotel">宿泊先</a>
+    <a href="#car">車・集合</a>
+    <a href="#tickets">チケット</a>
+    <a href="#items">持ち物</a>
+    <a href="#schedule" class="hotel-nav__cta">スケジュールを見る</a>
   </div>
 </nav>
 
 <main class="container">
 
-  <!-- ===== 比較表 ===== -->
-  <section id="compare" class="section">
-    <h2 class="section-title">3ホテル比較表</h2>
-    <p class="section-lead">スクロールせずスマホでも見やすいように、項目ごとにカード表示に切り替わります。</p>
+  <!-- ===== スケジュール ===== -->
+  <section id="schedule" class="section">
+    <h2 class="section-title">スケジュール</h2>
+    <p class="section-lead">1日目は移動 → 富士急ハイランド（アフタヌーンパス）→ ホテル泊、2日目は富士急ハイランド（1日フリーパス）→ 新潟へ帰宅。</p>
 
-    <div class="compare-table-wrap">
+    <div class="timeline">
+
+      <div class="timeline__day">
+        <h3 class="timeline__day-title">
+          <span class="timeline__day-num">1日目</span>
+          <span class="timeline__day-date">11/8（日）</span>
+        </h3>
+        <ol class="timeline__list">
+
+          <li class="timeline__item timeline__item--move">
+            <div class="timeline__marker" aria-hidden="true">🚗</div>
+            <div class="timeline__content">
+              <div class="timeline__time">6:00<span class="timeline__arrow">→</span>13:00</div>
+              <h4 class="timeline__title">新潟 → 富士急ハイランド</h4>
+              <p class="timeline__desc">車2台で移動。集合場所は<a href="#car">追ってお知らせ</a>します。</p>
+            </div>
+          </li>
+
+          <li class="timeline__item timeline__item--activity">
+            <div class="timeline__marker" aria-hidden="true">🎢</div>
+            <div class="timeline__content">
+              <div class="timeline__time">13:00<span class="timeline__arrow">→</span>18:00</div>
+              <h4 class="timeline__title">富士急ハイランド <span class="badge">アフタヌーンパス</span></h4>
+              <p class="timeline__desc">午後から遊ぶ。チケットのQRコードは<a href="#tickets">事前に送ります</a>。</p>
+            </div>
+          </li>
+
+          <li class="timeline__item timeline__item--stay">
+            <div class="timeline__marker" aria-hidden="true">🛏️</div>
+            <div class="timeline__content">
+              <div class="timeline__time">18:00<span class="timeline__arrow">→</span>翌8:00</div>
+              <h4 class="timeline__title">ホテルへ移動・宿泊</h4>
+              <p class="timeline__desc">
+                <a href="#hotel">ブリーズベイレイクリゾート河口湖</a>に宿泊（富士急から車で約10分）。夜はスマブラ大会！
+              </p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+
+      <div class="timeline__day">
+        <h3 class="timeline__day-title">
+          <span class="timeline__day-num">2日目</span>
+          <span class="timeline__day-date">11/9（月）</span>
+        </h3>
+        <ol class="timeline__list">
+
+          <li class="timeline__item timeline__item--activity">
+            <div class="timeline__marker" aria-hidden="true">🎢</div>
+            <div class="timeline__content">
+              <div class="timeline__time">8:00<span class="timeline__arrow">→</span>18:00</div>
+              <h4 class="timeline__title">富士急ハイランド <span class="badge">1日フリーパス</span></h4>
+              <p class="timeline__desc">ホテルを出て富士急へ。1日たっぷり遊ぶ。</p>
+            </div>
+          </li>
+
+          <li class="timeline__item timeline__item--move">
+            <div class="timeline__marker" aria-hidden="true">🚗</div>
+            <div class="timeline__content">
+              <div class="timeline__time">18:00<span class="timeline__arrow">→</span>24:00</div>
+              <h4 class="timeline__title">富士急ハイランド → 新潟</h4>
+              <p class="timeline__desc">新潟へ移動して帰宅。</p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== 宿泊先 ===== -->
+  <section id="hotel" class="section hotel-detail">
+    <h2 class="section-title">宿泊先</h2>
+    <div class="decided">
+      <p class="decided__label">決定！</p>
+      <h3 class="decided__name">ブリーズベイレイクリゾート河口湖</h3>
+      <p class="hotel-detail__summary">
+        温泉と夕食も楽しめる、コスパバランスの良いリゾートホテル。富士急ハイランドまで車で約10分。
+        <a class="official-link official-link--inline" href="https://breezbay-group.com/kawaguchiko/" target="_blank" rel="noopener">公式サイトを見る</a>
+      </p>
+      <ul class="facts">
+        <li><span class="facts__label">料金の目安</span><span class="price">¥15,000</span> / 1泊1人</li>
+        <li><span class="facts__label">温泉</span><span class="tag tag--yes">あり</span></li>
+        <li><span class="facts__label">朝食</span>和洋折衷20〜30種類のバイキング</li>
+        <li><span class="facts__label">夕食</span><span class="tag tag--yes">あり</span></li>
+        <li><span class="facts__label">部屋</span>ツイン（バス・トイレ付）</li>
+      </ul>
+    </div>
+    <div class="gallery">
+      <img src="images/hotel1-1.jpg" alt="ブリーズベイレイクリゾート河口湖 外観" loading="lazy">
+      <img src="images/hotel1-2.jpg" alt="ブリーズベイレイクリゾート河口湖 客室" loading="lazy">
+      <img src="images/hotel1-3.jpg" alt="ブリーズベイレイクリゾート河口湖 温泉" loading="lazy">
+      <img src="images/hotel1-4.jpg" alt="ブリーズベイレイクリゾート河口湖 朝食会場" loading="lazy">
+    </div>
+  </section>
+
+  <!-- ===== 車・集合 ===== -->
+  <section id="car" class="section">
+    <h2 class="section-title">車・集合</h2>
+    <div class="notice-grid">
+      <div class="notice">
+        <p class="notice__icon" aria-hidden="true">🚙</p>
+        <h3 class="notice__title">車は2台で行きます</h3>
+        <p class="notice__desc">レンタカー1台 ＋ 個人の車1台の2台構成です。</p>
+      </div>
+      <div class="notice notice--pending">
+        <p class="notice__icon" aria-hidden="true">📍</p>
+        <h3 class="notice__title">お迎え場所は調整中</h3>
+        <p class="notice__desc">みんなをどこで拾うかは追って決めて連絡します。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== チケット ===== -->
+  <section id="tickets" class="section">
+    <h2 class="section-title">チケット</h2>
+    <div class="notice-grid">
+      <div class="notice">
+        <p class="notice__icon" aria-hidden="true">🎫</p>
+        <h3 class="notice__title">入園チケットは幹事が購入</h3>
+        <p class="notice__desc">
+          1日目の<strong>アフタヌーンパス</strong>と2日目の<strong>1日フリーパス</strong>は、8人分まとめて幹事が購入します。
+          購入後、QRコードをみんなに送ります。
+        </p>
+      </div>
+      <div class="notice notice--action">
+        <p class="notice__icon" aria-hidden="true">⚡</p>
+        <h3 class="notice__title">絶叫優先券は各自で購入</h3>
+        <p class="notice__desc">
+          ファストパス（絶叫優先券）は各自で購入してください。<strong>当日の3日前から</strong>購入できます。
+        </p>
+        <ul class="notice__list">
+          <li>1日目（11/8）分 → <strong>11/5（木）</strong>から</li>
+          <li>2日目（11/9）分 → <strong>11/6（金）</strong>から</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 持ち物 ===== -->
+  <section id="items" class="section">
+    <h2 class="section-title">持ち物</h2>
+    <div class="notice-grid">
+      <div class="notice notice--action">
+        <p class="notice__icon" aria-hidden="true">🎮</p>
+        <h3 class="notice__title">スマブラのコントローラー</h3>
+        <p class="notice__desc">ホテルでスマブラをします。コントローラーを持っている人は持ってきてください！</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 参考：ホテル比較 ===== -->
+  <section id="compare" class="section">
+    <details class="archive">
+      <summary class="archive__summary">参考：ホテル比較（決めるまでの検討資料）</summary>
+      <div class="compare-table-wrap">
       <table class="compare-table">
         <caption class="visually-hidden">3ホテルの比較表</caption>
         <thead>
@@ -107,128 +264,8 @@
           </tr>
         </tbody>
       </table>
-    </div>
-  </section>
-
-  <!-- ===== ホテルA ===== -->
-  <section id="hotel-a" class="section hotel-detail">
-    <h2 class="section-title">ブリーズベイレイクリゾート河口湖</h2>
-    <p class="hotel-detail__summary">
-      温泉と夕食も楽しめる、コスパバランスの良いリゾートホテル。富士急ハイランドまで車で10分。
-      <a class="official-link official-link--inline" href="https://breezbay-group.com/kawaguchiko/" target="_blank" rel="noopener">公式サイトを見る</a>
-    </p>
-    <div class="gallery">
-      <img src="images/hotel1-1.jpg" alt="ブリーズベイレイクリゾート河口湖 外観" loading="lazy">
-      <img src="images/hotel1-2.jpg" alt="ブリーズベイレイクリゾート河口湖 客室" loading="lazy">
-      <img src="images/hotel1-3.jpg" alt="ブリーズベイレイクリゾート河口湖 温泉" loading="lazy">
-      <img src="images/hotel1-4.jpg" alt="ブリーズベイレイクリゾート河口湖 朝食会場" loading="lazy">
-    </div>
-  </section>
-
-  <!-- ===== ホテルB ===== -->
-  <section id="hotel-b" class="section hotel-detail">
-    <h2 class="section-title">富士山ステーションホテル</h2>
-    <p class="hotel-detail__summary">
-      安さ重視でシンプルに泊まれるホテル。朝食のバイキング付き。富士急ハイランドまで車で10分。
-      <a class="official-link official-link--inline" href="https://www.fujisanstation-hotel.com/restaurant_facility/" target="_blank" rel="noopener">公式サイトを見る</a>
-    </p>
-    <div class="gallery">
-      <img src="images/hotel2-1.jpg" alt="富士山ステーションホテル 外観" loading="lazy">
-      <img src="images/hotel2-2.jpg" alt="富士山ステーションホテル 客室" loading="lazy">
-      <img src="images/hotel2-3.jpg" alt="富士山ステーションホテル ロビー" loading="lazy">
-      <img src="images/hotel2-4.png" alt="富士山ステーションホテル 朝食会場" loading="lazy">
-    </div>
-  </section>
-
-  <!-- ===== ホテルC ===== -->
-  <section id="hotel-c" class="section hotel-detail">
-    <h2 class="section-title">ホテルマイステイズ富士山 展望温泉</h2>
-    <p class="hotel-detail__summary">
-      展望温泉が自慢の高級寄りホテル。ゆったりとした個室でくつろげる。富士急ハイランドまで車で10分。
-      <a class="official-link official-link--inline" href="https://iconia.co.jp/hotel-mystays-fuji-onsen-resort-yamanashi" target="_blank" rel="noopener">公式サイトを見る</a>
-    </p>
-    <div class="gallery">
-      <img src="images/hotel3-1.jpg" alt="ホテルマイステイズ富士山 展望温泉 外観" loading="lazy">
-      <img src="images/hotel3-2.avif" alt="ホテルマイステイズ富士山 展望温泉 客室" loading="lazy">
-      <img src="images/hotel3-3.jpg" alt="ホテルマイステイズ富士山 展望温泉 展望温泉" loading="lazy">
-      <img src="images/hotel3-4.jpg" alt="ホテルマイステイズ富士山 展望温泉 朝食会場" loading="lazy">
-    </div>
-  </section>
-
-  <!-- ===== 旅行計画 ===== -->
-  <section id="travel-plan" class="section">
-    <h2 class="section-title">旅程タイムライン</h2>
-    <p class="section-lead">1日目は移動 → 富士急ハイランド（半日）→ 宿泊、2日目は富士急ハイランド（一日）→ 移動というスケジュールです。</p>
-
-    <div class="timeline">
-
-      <div class="timeline__day">
-        <h3 class="timeline__day-title">
-          <span class="timeline__day-num">1日目</span>
-        </h3>
-        <ol class="timeline__list">
-
-          <li class="timeline__item timeline__item--move">
-            <div class="timeline__marker" aria-hidden="true">🚗</div>
-            <div class="timeline__content">
-              <div class="timeline__time">6:00<span class="timeline__arrow">→</span>13:00</div>
-              <h4 class="timeline__title">移動</h4>
-              <p class="timeline__desc">現地まで移動</p>
-            </div>
-          </li>
-
-          <li class="timeline__item timeline__item--activity">
-            <div class="timeline__marker" aria-hidden="true">🎢</div>
-            <div class="timeline__content">
-              <div class="timeline__time">13:00<span class="timeline__arrow">→</span>19:00</div>
-              <h4 class="timeline__title">富士急ハイランド <span class="badge">半日チケット</span></h4>
-              <p class="timeline__desc">半日チケットで遊ぶ。（休日のため混雑が予想される）</p>
-            </div>
-          </li>
-
-          <li class="timeline__item timeline__item--stay">
-            <div class="timeline__marker" aria-hidden="true">🛏️</div>
-            <div class="timeline__content">
-              <div class="timeline__time">19:30<span class="timeline__arrow">→</span>翌8:00</div>
-              <h4 class="timeline__title">宿泊施設滞在</h4>
-              <p class="timeline__desc">
-                チェックインしてゆっくり休みます。宿泊先は
-                <a href="#compare">ホテル比較表</a>から検討中。
-              </p>
-            </div>
-          </li>
-
-        </ol>
       </div>
-
-      <div class="timeline__day">
-        <h3 class="timeline__day-title">
-          <span class="timeline__day-num">2日目</span>
-        </h3>
-        <ol class="timeline__list">
-
-          <li class="timeline__item timeline__item--activity">
-            <div class="timeline__marker" aria-hidden="true">🎢</div>
-            <div class="timeline__content">
-              <div class="timeline__time">9:00<span class="timeline__arrow">→</span>19:00</div>
-              <h4 class="timeline__title">富士急ハイランド <span class="badge">一日チケット</span></h4>
-              <p class="timeline__desc">一日チケットで遊ぶ</p>
-            </div>
-          </li>
-
-          <li class="timeline__item timeline__item--move">
-            <div class="timeline__marker" aria-hidden="true">🚗</div>
-            <div class="timeline__content">
-              <div class="timeline__time">19:00<span class="timeline__arrow">→</span>24:00</div>
-              <h4 class="timeline__title">移動</h4>
-              <p class="timeline__desc">帰路の移動。</p>
-            </div>
-          </li>
-
-        </ol>
-      </div>
-
-    </div>
+    </details>
   </section>
 
 </main>
@@ -241,8 +278,8 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>掲載している料金・情報は目安です。ご予約の際は各ホテルの公式サイト等で最新の情報をご確認ください。</p>
-    <p class="site-footer__copy">&copy; 2026 ホテル比較サイト</p>
+    <p>集合場所など未定の項目は決まり次第このページを更新します。</p>
+    <p class="site-footer__copy">&copy; 2026 富士急ハイランド旅行のしおり</p>
   </div>
 </footer>
 
