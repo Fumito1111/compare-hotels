@@ -532,6 +532,165 @@ a {
   border-bottom: none;
 }
 
+.sub-title {
+  font-size: 1.1rem;
+  margin: 32px 0 12px;
+}
+
+.notice__title--sub {
+  margin-top: 20px;
+}
+
+/* ===== 参加者 ===== */
+.members {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px 4px;
+  border-bottom: 1px solid var(--color-border);
+  font-weight: bold;
+}
+
+.member:last-child {
+  border-bottom: none;
+}
+
+.member__tag {
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: #eef3ec;
+  color: var(--color-primary-dark);
+  font-size: 0.75rem;
+}
+
+/* ===== 送迎ルート ===== */
+.route {
+  list-style: none;
+  margin: 8px 0 12px;
+  padding: 0;
+}
+
+.route__stop {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 6px 0 6px 20px;
+  font-weight: bold;
+}
+
+.route__stop::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.route__stop:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 22px;
+  bottom: -14px;
+  width: 2px;
+  background: var(--color-border);
+}
+
+.route__stop--goal::before {
+  background: var(--color-accent);
+}
+
+.route__time {
+  min-width: 3em;
+  color: var(--color-primary-dark);
+}
+
+.route__note {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: var(--color-text-light);
+}
+
+/* ===== お金・精算 ===== */
+.money-summary__amount {
+  margin: 4px 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--color-accent);
+}
+
+.money-summary__amount span {
+  margin-left: 4px;
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.money-table-wrap {
+  background: var(--color-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+}
+
+.money-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.money-table th,
+.money-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.money-table thead th {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.money-table tbody th {
+  background: #fafaf7;
+}
+
+.money-table tfoot th,
+.money-table tfoot td {
+  font-weight: bold;
+  border-bottom: none;
+  background: #fafaf7;
+}
+
+.money-table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.money-table__sub {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+}
+
+.money-note {
+  margin: 8px 0 0;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
 /* ===== 参考：ホテル比較（折りたたみ） ===== */
 .archive__summary {
   cursor: pointer;
@@ -661,4 +820,60 @@ a {
   .compare-table__thumb {
     max-width: 160px;
   }
+}
+
+/* ===== レスポンシブ：スマホ（費用の内訳をカード化） ===== */
+@media (max-width: 640px) {
+  .money-table--breakdown thead {
+    display: none;
+  }
+
+  .money-table--breakdown,
+  .money-table--breakdown tbody,
+  .money-table--breakdown tr,
+  .money-table--breakdown th,
+  .money-table--breakdown td {
+    display: block;
+    width: 100%;
+  }
+
+  .money-table--breakdown tbody tr {
+    border-bottom: 6px solid var(--color-bg);
+  }
+
+  .money-table--breakdown tbody th {
+    background: var(--color-primary);
+    color: #fff;
+  }
+
+  .money-table--breakdown td {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    white-space: normal;
+  }
+
+  .money-table--breakdown td::before {
+    content: attr(data-label);
+    flex: 0 0 auto;
+    font-weight: bold;
+    color: var(--color-text-light);
+    font-size: 0.8rem;
+    margin-right: auto;
+  }
+
+  .money-table--breakdown .num {
+    flex-wrap: wrap;
+  }
+
+  .money-table--breakdown .money-table__sub {
+    display: inline;
+    margin-left: 6px;
+  }
+}
+
+.notice__desc--em {
+  margin-top: 8px;
+  font-weight: bold;
+  color: var(--color-primary-dark);
 }
