@@ -917,3 +917,98 @@ a {
   background: #fff4ea;
   font-size: 0.85rem;
 }
+
+/* ===== 新潟駅集合 ===== */
+.meetup {
+  margin-bottom: 20px;
+  padding: 14px 18px;
+  border-radius: var(--radius);
+  background: #fff4ea;
+  border: 2px solid var(--color-accent);
+}
+
+.meetup__title {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.meetup__list {
+  margin: 0;
+  padding-left: 1.2em;
+  font-size: 0.9rem;
+}
+
+/* ===== 天気・服装 ===== */
+.weather {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+  background: var(--color-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 24px;
+}
+
+.weather__forecast {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.weather__icon {
+  margin: 0;
+  font-size: 2.6rem;
+  line-height: 1;
+}
+
+.weather__label,
+.weather__sub {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.weather__main {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.weather__temps {
+  display: flex;
+  gap: 24px;
+}
+
+.weather__temp {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.weather__temp span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: var(--color-text-light);
+}
+
+.weather__temp--high {
+  color: #c2562a;
+}
+
+.weather__temp--low {
+  color: #2a6fb0;
+}
+
+.weather__alert {
+  margin: 16px 0 0;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  background: #eaf2fb;
+  border-left: 4px solid #2a6fb0;
+  font-size: 0.9rem;
+}
