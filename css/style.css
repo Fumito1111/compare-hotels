@@ -973,3 +973,35 @@ a {
   border-left: 4px solid #2a6fb0;
   font-size: 0.9rem;
 }
+
+.weather-days {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.weather__source {
+  margin: 8px 0 0;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+/* ===== walica ===== */
+.walica {
+  margin-top: 24px;
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  background: #fff4ea;
+  border: 2px solid var(--color-accent);
+}
+
+.walica__title {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.walica__desc {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+}
