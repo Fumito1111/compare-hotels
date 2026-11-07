@@ -1005,3 +1005,77 @@ a {
   margin: 0 0 12px;
   font-size: 0.9rem;
 }
+
+/* ===== アトラクション ===== */
+.attr-tips {
+  margin-bottom: 20px;
+  padding: 14px 18px;
+  border-radius: var(--radius);
+  background: #fff4ea;
+  border: 2px solid var(--color-accent);
+}
+
+.attr-tips__title {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+.attr-tips__list {
+  margin: 0;
+  padding-left: 1.2em;
+  font-size: 0.9rem;
+}
+
+.attr-table th[scope="row"] {
+  white-space: normal;
+}
+
+.attr-table__rank {
+  width: 3em;
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-primary-dark);
+}
+
+.attr-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.attr-badge {
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.attr-badge--rain {
+  background: #eaf2fb;
+  color: #2a6fb0;
+}
+
+.attr-badge--close {
+  background: #fff1e3;
+  color: #b85c1c;
+}
+
+.attr-badge--off {
+  background: #fde8e8;
+  color: #b42323;
+}
+
+.attr-badge--wet {
+  background: #e4f4f1;
+  color: #1f7a6b;
+}
+
+@media (max-width: 640px) {
+  .attr-table th,
+  .attr-table td {
+    padding: 8px 10px;
+  }
+}
