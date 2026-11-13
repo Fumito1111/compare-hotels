@@ -39,18 +39,24 @@
     border-radius: 12px;
     border-top: 6px solid var(--color-accent);
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    padding: 36px 28px;
+    overflow: hidden;
     text-align: center;
   }
 
-  .card__icon {
-    margin: 0;
-    font-size: 3rem;
-    line-height: 1.2;
+  .card__photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .card__body {
+    padding: 28px 28px 32px;
   }
 
   .card__title {
-    margin: 12px 0 4px;
+    margin: 0 0 4px;
     font-size: 1.4rem;
     color: var(--color-primary-dark);
   }
@@ -74,12 +80,14 @@
 </head>
 <body>
   <main class="card">
-    <p class="card__icon" aria-hidden="true">🎢</p>
-    <h1 class="card__title">2日間おつかれさまでした！</h1>
-    <p class="card__sub">富士急ハイランド旅行（11/8〜11/9）</p>
-    <p class="card__message">みんなのおかげで、楽しい旅行になりました。<br>参加してくれてありがとうございました。</p>
-    <p class="card__message">旅行が終わったので、しおりの内容は削除しました。</p>
-    <p class="card__note">このページも近いうちに公開を終了します。</p>
+    <img class="card__photo" src="fujiq.jpg" alt="青空の下の富士急ハイランドのコースターと富士山" width="1600" height="1200">
+    <div class="card__body">
+      <h1 class="card__title">2日間おつかれさまでした！</h1>
+      <p class="card__sub">富士急ハイランド旅行（11/8〜11/9）</p>
+      <p class="card__message">みんなのおかげで、楽しい旅行になりました。<br>参加してくれてありがとうございました。</p>
+      <p class="card__message">旅行が終わったので、しおりの内容は削除しました。</p>
+      <p class="card__note">このページも近いうちに公開を終了します。</p>
+    </div>
   </main>
 </body>
 </html>

@@ -2,3 +2,7 @@
 src/
 # StatiCrypt のパスワード
 .env
+# macOS / 元画像
+.DS_Store
+._*
+IMG_0419.JPG
